@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Sandi sukmana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .extra-desc {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Sandi sukmana</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="assets/poto.jpg" alt="Foto Profil" class="profile-img" />
+    <h2>Hi, I'm Sandi Sukmana</h2>
+    <p>Junior Web Developer | System Analyst | Laravel Enthusiast</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang mahasiswa sekaligus web developer pemula yang antusias dalam pengembangan sistem informasi berbasis web.</p>
+    <p>Saya memiliki ketertarikan tinggi pada analisis sistem, perancangan antarmuka (UI/UX), serta pengembangan aplikasi menggunakan framework Laravel.</p>
+    <p>Saya percaya bahwa teknologi bukan hanya alat, tetapi solusi nyata untuk menyederhanakan proses dan meningkatkan produktivitas.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML, CSS, JavaScript</li>
+      <li>Laravel, PHP</li>
+      <li>Java (NetBeans)</li>
+      <li>UI/UX Design</li>
+      <li>Database: MySQL</li>
+      <li>Draw.io</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>My Projects</h2>
+    <div class="portfolio-grid">
+      <!-- Project: Aplikasi Konser -->
+      <div class="card">
+        <img src="assets/concert-app.jpg" alt="Concert App" style="width:100%; height:auto;" />
+        <h3>Concert App</h3>
+        <p>Aplikasi konser berbasis web yang dibuat dengan Java NetBeans dan JSP untuk pembelian tiket dan informasi konser.</p>
+        <p><strong>Tools:</strong> Java, NetBeans, JSP, MySQL</p>
+        <div id="desc-concert" class="extra-desc">
+          <p><strong>Deskripsi:</strong> Sistem ini memungkinkan pengguna untuk melihat konser yang akan datang, membaca deskripsi acara, dan membeli tiket secara langsung. Memiliki tampilan modern dan interaktif.</p>
+        </div>
+        <button class="btn" onclick="toggleDescription('desc-concert')">Lihat Selengkapnya</button>
+      </div>
+
+      <!-- Project: Aplikasi Posyandu -->
+      <div class="card">
+        <img src="assets/posyandu-app.jpg" alt="Posyandu App" style="width:100%; height:auto;" />
+        <h3>Posyandu Digital</h3>
+        <p>Platform digital pelayanan Posyandu yang modern dan efisien, dibangun menggunakan Laravel.</p>
+        <p><strong>Tools:</strong> Laravel, PHP, MySQL, Bootstrap</p>
+        <div id="desc-posyandu" class="extra-desc">
+          <p><strong>Deskripsi:</strong> Digunakan untuk pencatatan data ibu dan anak, serta laporan dan manajemen pengguna. Dilengkapi fitur login, registrasi, dan dashboard admin.</p>
+        </div>
+        <button class="btn" onclick="toggleDescription('desc-posyandu')">Lihat Selengkapnya</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Kontak</h2>
+    <p>Email: sandisukmana123@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sandi-sukmana-586401314/">LinkedIn Profil</a></p>
+    <p>GitHub: <a href="https://github.com/Sandisukmana073">GitHub Profil</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sandi Sukmana. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDescription(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
